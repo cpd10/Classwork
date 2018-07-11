@@ -1,0 +1,67 @@
+#lang racket
+;Darius Hooks
+;Nov 15, 2016
+;Project #2
+;
+;
+;
+;
+(define degree
+  (lambda ply
+    (if(null? ply)
+       0
+       (- (+ 1 (degree (cdr ply))) 1)
+     )
+   )  
+ )
+
+(define displayTerm
+  (lambda ply
+    (let* ([coef (car ply)] [exp (cadr ply)])
+      (cond
+        [(= coef 1) (display "x")]
+        [(> coef 1) (display coef)]
+        [(= coef 0) (display "work in progress")]
+      )
+    )
+  )
+)
+;
+;
+;
+;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;DISPLAY POLYNOMIAL;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;
+(define displayPoly
+  (lambda (p)
+    (cond
+        ;IF LIST IS NULL
+        ((null? p) (newline))
+
+        ;IF FRONT OF THE LIST IS 0
+        ((equal? (car p) 0)
+          (begin
+            (if (equal? (length p) 1)
+                (newline)
+                (if (equal? (cadr p) 0)
+                    (newline)
+                    (begin (display "  +  ") (displayPoly (cdr p)))
+                 );END IF
+             );END IF 
+           );END BEGIN                 
+         );END
+
+        ;IF FRONT OF LIST GREATER THAN 0
+        ((> (car p) 0)
+          (begin
+            (cond
+              ((equal? (- (length p) 1) 1) (begin (display (car p)) (display "x") (displayPoly (cdr p))))
+              ((equal? (- (length p) 1) 0) (begin (display (car p)) (displayPoly (cdr p))))
+              (else (display (car p)) (display "x^") (display (- (length p) 1)) (displayPoly (cdr p)))
+             );END COND
+           );END BEGIN
+         );END
+        
+     );END COND
+   )
+ );END DISPLAY POLY

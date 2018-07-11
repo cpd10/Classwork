@@ -1,0 +1,69 @@
+1 ?- grandparent(darius,X).
+false.
+
+2 ?- grandparent(X,darius).
+X = henry1 .
+
+3 ?- grandfather(X,tt).
+X = ernest .
+
+4 ?- grandmother(X,terrance).
+X = ellamae .
+
+5 ?- mother(X,tyler).
+X = gentcella .
+
+6 ?- father(X,henry2).
+X = henry1 .
+
+7 ?- sibling(henry2,X).
+X = phillip ;
+X = sharry ;
+X = chaundra .
+
+8 ?- aunt(X,darius).
+X = sharry .
+
+9 ?- uncle(X,terrance).
+X = phillip .
+
+10 ?- sister(X,phillip).
+X = sharry .
+
+11 ?- brother(X,tyler).
+X = tt ;
+X = terrance .
+
+12 ?- ancestor(X,darius).
+X = henry2 ;
+X = gentcella ;
+X = henry1 .
+
+13 ?- descendant(terrance,X).
+X = henry2 ;
+X = henry1 ;
+X = ellamae .
+
+14 ?- findParents(gentcella,L).
+L = [ernest, lucille].
+
+15 ?- findGrandparents(tyler,L).
+L = [henry1, ellamae, ernest, lucille].
+
+16 ?- findChildren(henry1,L).
+L = [henry2, phillip, sharry, chaundra, karen, felicia, yolanda, tonia].
+
+17 ?- findSiblings(tonia,L).
+L = [chaundra, felicia, henry2, karen, phillip, sharry, yolanda].
+
+18 ?- generationsAbove(henry1,X,2).
+X = terrance ;
+X = darius .
+
+19 ?- generationsBelow(darius,X,1).
+X = henry2 ;
+X = gentcella .
+
+20 ?- generationsBelow(darius,X,1).
+X = henry2 ;
+X = gentcella .

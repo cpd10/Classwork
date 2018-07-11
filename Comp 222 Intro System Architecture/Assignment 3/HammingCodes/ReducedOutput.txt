@@ -1,0 +1,77 @@
+Even Parity: 
+
+1110101
+
+*** There is an error in bit: 6
+
+*** The corrected Hamming code is: 1010101
+
+
+
+Odd Parity: 
+
+1110101
+
+*** There is an error in bit: 1
+
+*** The corrected Hamming code is: 1110100
+
+
+
+Even Parity: 
+
+011111110110100
+
+*** There is an error in bit: 15
+
+*** The corrected Hamming code is: 111111110110100
+
+
+
+Odd Parity: 
+
+011111110110100
+
+*** There is no bit error
+
+
+
+Even Parity: 
+
+0100100001001000
+
+*** There is no bit error
+
+
+
+Odd Parity: 
+
+0100100001001000
+
+*** There is an error in bit: 15
+
+*** The corrected Hamming code is: 0000100001001000
+
+
+
+Even Parity: 
+
+100100101011
+
+*** There is an error in bit: 4
+
+*** The corrected Hamming code is: 100100100011
+
+
+
+Odd Parity: 
+
+100100101011
+
+*** There is an error in bit: 11
+
+*** The corrected Hamming code is: 110100101011
+
+
+
+*** Invalid Entry - Exceeds Maximum Code Length of 2

@@ -1,0 +1,54 @@
+﻿#include <stdio.h>
+#include <stdlib.h>
+
+/* Define page table as dynamic structure containing virtual page and page frame 
+   and initialize variable as pointer to structure */
+
+/* Declare global var's */
+
+
+/**************************************************************/
+void FUNCTION FOR OPTION#1 ()
+{
+/* Declare local var's */
+
+/* Prompt for main memory size, page size, and replacement policy */
+
+/* Allocate and initialize page table based on number of entries */
+
+return;
+}
+
+
+
+/***************************************************************/
+void FUNCTION FOR OPTION#2()
+{
+/* Declare local var's */
+
+/* Prompt for virtual address */
+  
+/* Translate virtual mem addr to virtual page and offset*/
+
+/* Check for end of table, unallocated entry, or matched entry in table 
+and update table appropriately; while none of three cases, keep looping */
+
+/* In case of hit in page table, calculate physical address and print message */  
+
+/* Print out current state of page table */
+return;
+}
+
+
+
+/**************************************************************/
+int main()
+{
+/* Declare local var's */
+
+/* Until user quits, print menu of options, prompt for user input, and select appropriate option */
+
+return 1;
+}
+
+

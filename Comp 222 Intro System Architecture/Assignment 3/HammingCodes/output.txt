@@ -1,0 +1,165 @@
+Darius Hooks
+
+1) Enter parameters
+2) Check hamming code
+3) Quit
+Enter selection: 
+Enter the maximum length: 
+Enter the parity (0 = even, 1 = odd): 
+Darius Hooks
+
+1) Enter parameters
+2) Check hamming code
+3) Quit
+Enter selection: 
+Enter the hamming code: 
+***There is an error in bit: 6
+***The corrected hamming code is: 1010101
+
+Darius Hooks
+
+1) Enter parameters
+2) Check hamming code
+3) Quit
+Enter selection: 
+Enter the maximum length: 
+Enter the parity (0 = even, 1 = odd): 
+Darius Hooks
+
+1) Enter parameters
+2) Check hamming code
+3) Quit
+Enter selection: 
+Enter the hamming code: 
+***There is an error in bit: 1
+***The corrected hamming code is: 1110100
+
+Darius Hooks
+
+1) Enter parameters
+2) Check hamming code
+3) Quit
+Enter selection: 
+Enter the maximum length: 
+Enter the parity (0 = even, 1 = odd): 
+Darius Hooks
+
+1) Enter parameters
+2) Check hamming code
+3) Quit
+Enter selection: 
+Enter the hamming code: 
+***There is an error in bit: 15
+***The corrected hamming code is: 111111110110100
+
+Darius Hooks
+
+1) Enter parameters
+2) Check hamming code
+3) Quit
+Enter selection: 
+Enter the maximum length: 
+Enter the parity (0 = even, 1 = odd): 
+Darius Hooks
+
+1) Enter parameters
+2) Check hamming code
+3) Quit
+Enter selection: 
+Enter the hamming code: 
+***There are no errors
+
+Darius Hooks
+
+1) Enter parameters
+2) Check hamming code
+3) Quit
+Enter selection: 
+Enter the maximum length: 
+Enter the parity (0 = even, 1 = odd): 
+Darius Hooks
+
+1) Enter parameters
+2) Check hamming code
+3) Quit
+Enter selection: 
+Enter the hamming code: 
+***There are no errors
+
+Darius Hooks
+
+1) Enter parameters
+2) Check hamming code
+3) Quit
+Enter selection: 
+Enter the maximum length: 
+Enter the parity (0 = even, 1 = odd): 
+Darius Hooks
+
+1) Enter parameters
+2) Check hamming code
+3) Quit
+Enter selection: 
+Enter the hamming code: 
+***There is an error in bit: 15
+***The corrected hamming code is: 0000100001001000
+
+Darius Hooks
+
+1) Enter parameters
+2) Check hamming code
+3) Quit
+Enter selection: 
+Enter the maximum length: 
+Enter the parity (0 = even, 1 = odd): 
+Darius Hooks
+
+1) Enter parameters
+2) Check hamming code
+3) Quit
+Enter selection: 
+Enter the hamming code: 
+***There is an error in bit: 4
+***The corrected hamming code is: 100100100011
+
+Darius Hooks
+
+1) Enter parameters
+2) Check hamming code
+3) Quit
+Enter selection: 
+Enter the maximum length: 
+Enter the parity (0 = even, 1 = odd): 
+Darius Hooks
+
+1) Enter parameters
+2) Check hamming code
+3) Quit
+Enter selection: 
+Enter the hamming code: 
+***There is an error in bit: 11
+***The corrected hamming code is: 110100101011
+
+Darius Hooks
+
+1) Enter parameters
+2) Check hamming code
+3) Quit
+Enter selection: 
+Enter the maximum length: 
+Enter the parity (0 = even, 1 = odd): 
+Darius Hooks
+
+1) Enter parameters
+2) Check hamming code
+3) Quit
+Enter selection: 
+Enter the hamming code: 
+**Invalid Entry: Exceeds maximum code length of 2
+
+Darius Hooks
+
+1) Enter parameters
+2) Check hamming code
+3) Quit
+Enter selection: 

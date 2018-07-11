@@ -1,0 +1,221 @@
+Declare an array of 1000 integers called primes (for prime numbers), an array of 1000 integers called fibos (for Fibonacci numbers), an array of 500 integers for primes that are also part of the Fibonacci series, an array of 500 integers that are prime, but not part of the Fibonacci series, and an array of 500 integers that are part of the Fibonacci series but not prime numbers.
+
+Write a function (main_menu) that prints the following menu:
+
+Choose one of the following by entering the corresponding number:
+
+1.Display prime numbers
+2.Display Fibonacci numbers
+3.Display prime numbers that are also part of the Fibonacci series
+4.Display prime numbers that are not part of the Fibonacci series
+5.Display Fibonacci numbers that are not prime numbers
+6.Search for a number
+7.Quit
+The main_menu function returns the number selected. 
+
+Write a function – isprime() - that receives an integer as a parameter and returns true if the parameter is a prime number and false if it’s not.  A number is prime if it is not divisible by any number other than 1 and itself.
+
+Write a function called getprimes() which takes the primes array defined in main, its size, and an integer for the upper limit, and finds and stores in the array, all the prime numbers up to and including the upper limit, and then returns the number of elements it ends up storing in the array. 
+
+Write a function called getfibos() which takes the fibos array, its size, an integer for the upper limit, and finds and stores in the array, all the Fibonacci numbers up to including the upper limit, and then returns the number of elements it ends up storing in the array.   Fibonacci numbers are 0 1 1 2 3 5 8 13 21 34 55 ...  Each number is the sum of the prior two.
+
+Write three more functions to generate and store in their corresponding arrays the integers that meet the requirements of the menu options 3, 4 and 5, up to and including the limit passed as parameter.  In addition to the limit, these functions must take both the primes and fibos arrays, as well as their sizes as parameters, and must return the number of integers generated.  For example, if menu option 3 is selected, the getprimes_fibos() function is called to generate all prime numbers that are also part of the Fibonacci series up to a limit such as 1000.  You may call the other two functions getprimes_notfibos() and getfibos_notprimes(), or something similar to make it clear what they generate.
+
+Write a function called display() which receives an array of integers, its size and two integers indicating the range of integers to print (lower and upper limits), and prints all array elements within the specified range and  then returns the number of integers printed.
+
+Write a function called search() which receives an array of integers, its size and a search value and searches the array for the search value.  It returns the index within the array where the value is found or -1, if it doesn’t find it (also done in class).
+
+The main program must first get an upper limit from the user and pass it, along with the appropriate array(s) and array size(s) – 1000 or 500 - to the 5 functions (getprimes, getfibos, getprimes_fibos, getprimes_notfibos, getfibos_notprimes) that generate the 5 number series corresponding to the menu option 1-5.   As described above, these functions generate the required numbers up to the given limit and store them in the appropriate arrays provided to them by main as parameters (primes, fibos, primes_fibos, primes_notfibos, fibos_notprimes), and return back to main the number of integers generated.   The sizes thus returned will then be used to print the numbers generated.
+
+First, the first two functions (getprimes and getfibos) are called to populate the primes and fibos arrays and then these two arrays are passed to the other 3 functions that populate the other three arrays using numbers stored in these arrays.  For example, the getprimes_notfibos () function receives primes, fibos and primes_notfibos arrays and populates the latter array using the contents of primes and fibos arrays.  The array size parameter that’s also passed to the function will have to be the size of primes array.   For getprimes_fibos() function, however, the size parameter should be the smaller of the sizes of the primes and fibos arrays since only those are generated that are in both arrays.  Thus, you must decide what size to pass to each function that generates the series.  As mentioned above, the primes and fibos array sizes are returned by the getprimes() and getfibos() functions, respectively.  The limit parameter is the same for all functions, obtained from the user before the main menu is displayed.  Likewise, the getprimes_fibos() and getfibos_notprimes() functions receive the limit, the primes array, the fibos array, the array they will be populating and the appropriate size, and populate the corresponding array (primes_fibos or fibos_notprimes) and return the number of integers generated and stored.
+
+If the selection that’s made from the main menu is 1-5, the program reads two integers for the lower and upper limits of the numbers to print (the upper limit for printing must not be larger than the limit entered for generating the numbers – you cannot print more numbers than have been generated) and passes the array corresponding to the selected menu option, along with the array size (remember, the array size is returned by the function that populates the array) and the two limits to the display() function to print the array elements.   For example, if primes_notfibos is the selected array, it and its size, as well as the lower and upper limits are passed to the display() function to print the numbers within the specified range.
+
+If search is selected from the menu, the program calls another menu function (e.g.: series_menu) which prints the following menu and asks the user to select the series to search in:
+
+1.Prime numbers
+2.Fibonacci numbers
+3.Prime numbers that are also part of the Fibonacci series
+4.Prime numbers that are not part of the Fibonacci series
+5.Fibonacci numbers that are not prime numbers
+6.Cancel
+The series_menu() function returns the selection which is used by main as the array to search in:  primes, fibos, primes_fibos, primes_notfibos, or fibos_notprimes.   It then asks for the value to search for and passes the value, as well as the selected array and its size to the search function which returns either the position in the array where the value was found or -1 if not found.   Main then prints the position or prints that it was not found.   If cancel is selected from the series menu, the program displays the main menu again without asking for the search value.   If any number other than 1-6 is selected, the program must redisplay the menu until a number within 1-6 is entered.
+
+The program keeps looping back to print the main menu for printing another series of numbers, to search for a number in a series, or to quit.  Selecting quit ends the program.  Any number other than 1-7 returned by main menu must print an error message and display the menu again.  This continues until quit is selected from the menu which ends the program.
+
+The following is a sample run of the program:
+
+Enter the upper limit of the numbers to generate:   500
+
+1.Display prime numbers
+2.Display Fibonacci numbers
+3.Display prime numbers that are also part of the Fibonacci series
+4.Display prime numbers that are not part of the Fibonacci series
+5.Display Fibonacci numbers that are not prime numbers
+6.Search for a number
+7.Quit
+Enter selection:  3
+
+Enter lower and upper limits to print:  10  100
+
+13  89
+
+2 numbers were printed.
+
+Choose one of the following by entering the corresponding number:
+
+1.Display prime numbers
+2.Display Fibonacci numbers
+3.Display prime numbers that are also part of the Fibonacci series
+4.Display prime numbers that are not part of the Fibonacci series
+5.Display Fibonacci numbers that are not prime numbers
+6.Search for a number
+7.Quit
+Enter selection:   4
+
+Enter lower and upper limits:  1  20
+
+7  11  17  19
+
+4 numbers met the criteria.
+
+Choose one of the following by entering the corresponding number:
+
+1.Display prime numbers
+2.Display Fibonacci numbers
+3.Display prime numbers that are also part of the Fibonacci series
+4.Display prime numbers that are not part of the Fibonacci series
+5.Display Fibonacci numbers that are not prime numbers
+6.Search for a number
+7.Quit
+Enter selection:  5
+
+Enter lower and upper limits:  10  100
+
+21  34  55
+
+3 numbers met the criteria.
+
+Choose one of the following by entering the corresponding number:
+
+1.Display prime numbers
+2.Display Fibonacci numbers
+3.Display prime numbers that are also part of the Fibonacci series
+4.Display prime numbers that are not part of the Fibonacci series
+5.Display Fibonacci numbers that are not prime numbers
+6.Search for a number
+7.Quit
+Enter selection:  6
+
+Choose the series to search in by entering the corresponding number:
+
+1.Prime numbers
+2.Fibonacci numbers
+3.Prime numbers that are also part of the Fibonacci series
+4.Prime numbers that are not part of the Fibonacci series
+5.Fibonacci numbers that are not prime numbers
+6.Cancel
+Enter selection:  5
+
+Enter the number to search for:  55
+
+55 was found at position 2 in the series.
+
+Choose one of the following by entering the corresponding number:
+
+1.Display prime numbers
+2.Display Fibonacci numbers
+3.Display prime numbers that are also part of the Fibonacci series
+4.Display prime numbers that are not part of the Fibonacci series
+5.Display Fibonacci numbers that are not prime numbers
+6.Search for a number
+7.Quit
+Enter selection:   6
+
+Choose the series to search in by entering the corresponding number:
+
+1.Prime numbers
+2.Fibonacci numbers
+3.Prime numbers that are also part of the Fibonacci series
+4.Prime numbers that are not part of the Fibonacci series
+5.Fibonacci numbers that are not prime numbers
+6.Cancel
+Enter selection:  7
+
+Invalid Entry!
+
+Choose the series to search in by entering the corresponding number:
+
+1.Prime numbers
+2.Fibonacci numbers
+3.Prime numbers that are also part of the Fibonacci series
+4.Prime numbers that are not part of the Fibonacci series
+5.Fibonacci numbers that are not prime numbers
+6.Cancel
+Enter selection:  6
+
+Choose one of the following by entering the corresponding number:
+
+1.Display prime numbers
+2.Display Fibonacci numbers
+3.Display prime numbers that are also part of the Fibonacci series
+4.Display prime numbers that are not part of the Fibonacci series
+5.Display Fibonacci numbers that are not prime numbers
+6.Search for a number
+7.Quit
+Enter selection:   8
+
+Invalid Entry!
+
+Choose one of the following by entering the corresponding number:
+
+1.Display prime numbers
+2.Display Fibonacci numbers
+3.Display prime numbers that are also part of the Fibonacci series
+4.Display prime numbers that are not part of the Fibonacci series
+5.Display Fibonacci numbers that are not prime numbers
+6.Search for a number
+7.Quit
+Enter selection:   2
+
+Enter lower and upper limits:  0  1000
+
+Error: Upper limit cannot be larger than 500.
+
+Choose one of the following by entering the corresponding number:
+
+1.Display prime numbers
+2.Display Fibonacci numbers
+3.Display prime numbers that are also part of the Fibonacci series
+4.Display prime numbers that are not part of the Fibonacci series
+5.Display Fibonacci numbers that are not prime numbers
+6.Search for a number
+7.Quit
+Enter selection:   2
+
+Enter lower and upper limits:  0  100
+
+0 1 1 2 3 5 8 13 21 34 55 89
+
+12 numbers met the criteria.
+
+Choose one of the following by entering the corresponding number:
+
+1.Display prime numbers
+2.Display Fibonacci numbers
+3.Display prime numbers that are also part of the Fibonacci series
+4.Display prime numbers that are not part of the Fibonacci series
+5.Display Fibonacci numbers that are not prime numbers
+6.Search for a number
+7.Quit
+Enter selection:   7
+
+Press any key to continue.
+
+Read the instructions carefully and examine the above sample run of the program including the validation of user’s inputs.  Your program must look and act as requested by the end user as much as possible.  Minor differences may be negotiable. 
+
+To get full credit, you must use all the functions specified.  Not using the required functions will cost you significant points.  Use function and array names suggested in theses instructions.  Also, use variable names that are descriptive.  Make sure to make your code easy to read and understand.  Use indentation and blank lines for readability and comment wherever the code is not very clear.  Put your name, class, assignment and date on top of your source code as comments.  Test your program thoroughly and completely. 
+
+Upload both cpp and exe files together, without zipping.  Please, do not upload any other file, only the two specified.  Please, make sure the files you upload are the final ones so you do not have to upload more than one version. 
+
+You may discuss the project with other students, but must not share your code with anyone.

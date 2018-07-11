@@ -1,0 +1,12 @@
+STACKS
+https://www.genghiskhent.com/jak/836/handouts/stack.html
+https://myetudes.org/access/meleteDocs/content/private/meleteDocs/1bb06f8c-242d-4c4f-80de-3dad2064f610/uploads/samplestack-1.cpp
+
+
+QUEUE
+https://www.genghiskhent.com/jak/836/handouts/queue.html
+
+
+LINKED LIST
+https://www.genghiskhent.com/jak/836/handouts/linkedlist.html
+https://www.genghiskhent.com/jak/836/handouts/bst.html

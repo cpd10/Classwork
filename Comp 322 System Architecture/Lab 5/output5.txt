@@ -1,0 +1,11 @@
+./server 3000
+Received number 1: 99
+Received number 2: 45
+Here are the numbers added together: 144
+
+
+./client localhost 3000
+Enter a number: 99
+./client localhost 3000
+Enter a number: 45
+

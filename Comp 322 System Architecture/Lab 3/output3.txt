@@ -1,0 +1,103 @@
+		File: ..
+        Directory: /root
+        You have general permissions: read execute
+
+        File: output2.txt
+        Directory: /home/users13/dkh59872
+        You have owner permissions: read write
+
+        File: program3.c
+        Directory: /home/users13/dkh59872
+        You have owner permissions: read write
+
+        File: program2.c
+        Directory: /home/users13/dkh59872
+        You have owner permissions: read write
+
+        File: .
+        Directory: /home/users13/dkh59872
+        You have owner permissions: read write execute
+
+        File: getid.c
+        Directory: /home/users13/dkh59872
+        You have owner permissions: read write
+
+        File: myDir
+        Directory: /home/users13/dkh59872
+        You have owner permissions: read write execute
+
+        File: prgassign4_hooks.c
+        Directory: /home/users13/dkh59872
+        You have owner permissions: read write
+
+        File: prgassign3_hooks.c
+        Directory: /home/users13/dkh59872
+        You have owner permissions: read write
+
+        File: fork1.c
+        Directory: /home/users13/dkh59872
+        You have owner permissions:
+
+        File: prgassign2_hooks.c
+        Directory: /home/users13/dkh59872
+        You have owner permissions: read write
+
+        File: LexAnalyzer.java
+        Directory: /home/users13/dkh59872
+        You have owner permissions: read write
+
+        File: unix.txt
+        Directory: /home/users13/dkh59872
+        You have owner permissions:
+
+        File: test.c
+        File: program2
+        Directory: /home/users13/dkh59872
+        Directory: /home/users13/dkh59872
+        You have owner permissions: read write
+
+        You have owner permissions: read write execute
+
+        File: fileaccess.c
+        Directory: /home/users13/dkh59872
+        You have owner permissions: read write
+
+        File: input.txt
+        Directory: /home/users13/dkh59872
+        You have owner permissions: read write
+
+        ./program3: cannot access SSH_CONNECTION=107.184.211.79 60382 130.166.12.6 22
+
+        File: pid.c
+        File: output.txt
+        Directory: /home/users13/dkh59872
+        Directory: /home/users13/dkh59872
+        File: log.txt
+        You have owner permissions:
+        You have owner permissions: read write
+
+
+        Directory: /home/users13/dkh59872
+        You have owner permissions: read write
+
+        File: prgassign1_hooks.c
+        Directory: /home/users13/dkh59872
+        File: script
+        You have owner permissions: read write
+
+        Directory: /home/users13/dkh59872
+        You have owner permissions: read write execute
+
+        File: output3.txt
+        Directory: /home/users13/dkh59872
+        You have owner permissions: read write
+
+        File: .bash_history
+        Directory: /home/users13/dkh59872
+        You have owner permissions: read write
+
+        File: program3
+        Directory: /home/users13/dkh59872
+        You have owner permissions: read write execute
+
+Done

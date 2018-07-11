@@ -1,0 +1,56 @@
+- New customer trying to find a seat
+- Customer is decreasing the number of free seats to 2
+- Customer is now waiting for the barber
+- New customer trying to find a seat
+- Customer is decreasing the number of free seats to 1
+- Customer is now waiting for the barber
+Barber 1 is trying to get a customer
+Barber 1 is waiting for the seat to become free
+Barber 1 is increasing the number of free seats to 2
+Barber is now cutting hair 1
+- Customer is now getting hair cut
+- New customer trying to find a seat
+- Customer is decreasing the number of free seats to 1
+- Customer is now waiting for the barber
+- New customer trying to find a seat
+- Customer is decreasing the number of free seats to 0
+- Customer is now waiting for the barber
+- New customer trying to find a seat
+* Customer giving up: No free chairs in waiting room
+-ksh-4.1$ - New customer trying to find a seat
+* Customer giving up: No free chairs in waiting room
+- New customer trying to find a seat
+* Customer giving up: No free chairs in waiting room
+- New customer trying to find a seat
+* Customer giving up: No free chairs in waiting room
+- Barber 1 finished hair cut
+Barber 2 is trying to get a customer
+Barber 2 is waiting for the seat to become free
+Barber 2 is increasing the number of free seats to 1
+Barber is now cutting hair 2
+- Customer is now getting hair cut
+- New customer trying to find a seat
+- Customer is decreasing the number of free seats to 0
+- Customer is now waiting for the barber
+- New customer trying to find a seat
+* Customer giving up: No free chairs in waiting room
+- Barber 2 finished hair cut
+Barber 3 is trying to get a customer
+Barber 3 is waiting for the seat to become free
+Barber 3 is increasing the number of free seats to 1
+Barber is now cutting hair 3
+- Customer is now getting hair cut
+- Barber 3 finished hair cut
+Barber 4 is trying to get a customer
+Barber 4 is waiting for the seat to become free
+Barber 4 is increasing the number of free seats to 2
+Barber is now cutting hair 4
+- Customer is now getting hair cut
+- Barber 4 finished hair cut
+Barber 5 is trying to get a customer
+Barber 5 is waiting for the seat to become free
+Barber 5 is increasing the number of free seats to 3
+Barber is now cutting hair 5
+- Customer is now getting hair cut
+- Barber 5 finished hair cut
+
